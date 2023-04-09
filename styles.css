@@ -1,11 +1,11 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
-.topnav {
+.navbar {
   overflow: hidden;
   background-color: #333;
 }
 
-.topnav a {
+.navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -15,17 +15,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
   font-size: 17px;
 }
 
-.topnav a:hover {
+.navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav a.active {
+.navbar a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-.topnav .icon {
+.navbar .icon {
   display: none;
 }
 
@@ -72,28 +72,28 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .navbar.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
