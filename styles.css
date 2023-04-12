@@ -105,11 +105,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* End of Navigation Bar */
 
-/* images to be resizable responsive */
+/* Images Section */
 
-img {
-  max-width: 100%;
-  height: auto;
+.images {
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 5px;
+  margin: 5px;
 }
 
-/* End of images to be resizable responsive */
+/* End of myImages */
