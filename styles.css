@@ -1,7 +1,10 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
+/* Navigation Bar */
+
 .navbar {
   overflow: hidden;
+  border-radius: 10px;
   background-color: #333;
 }
 
@@ -99,3 +102,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
     text-align: left;
   }
 }
+
+/* End of Navigation Bar */
+
+/* images to be resizable responsive */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* End of images to be resizable responsive */
