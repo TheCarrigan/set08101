@@ -9,17 +9,18 @@
 
 <script src="myScript.js"></script>
 
+<!-- Navigation Bar -->
 <nav class="navbar" id="myNavbar">
   <a href="/index.html" class="active">Home</a>
   <a href="/site/recipes/recipes.html">Recipes</a>
-  <div href="/site/catagories/catagories.html" class="dropdown">
-    <button class="dropbtn">Catagories</button>
+  <nav href="/site/catagories/catagories.html" class="dropdown">
+    <button onclick="window.location.href='/site/catagories/catagories.html';" class="dropbtn">Catagories</button>
     <nav class="dropdown-content">
       <a href="#">Quick</a>
       <a href="#">Everyday</a>
       <a href="#">Healthy</a>
     </nav>
-  </div> 
+  </nav> 
   <a href="/site/other/other.html">Other</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
