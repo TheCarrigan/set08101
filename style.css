@@ -19,7 +19,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 .navbar a:hover {
   background-color: #DCE1DE;
-  color: black;
+  color: #000000;
 }
 
 .navbar a.active {
@@ -49,7 +49,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 .dropdown:hover .dropbtn {
   background-color: #DCE1DE;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
 }
 
