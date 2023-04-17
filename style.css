@@ -79,7 +79,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -106,7 +106,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
     width: 100%;
     text-align: left;
   }
-}
+}*/
 /* End of Navigation Bar */
 
 /* Images Section */
