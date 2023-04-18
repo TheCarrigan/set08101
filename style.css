@@ -2,9 +2,11 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 /* General Styles */
 .centred {
-  margin: 0 auto;
-  width: 50%;
+  margin: auto;
+  text-align: center;
+  align-content: center;
 }
+/* End of General Styles */
 
 /* Navigation Bar */
 .navbar {
@@ -85,6 +87,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
   display: block;
 }
 
+/* Responsive Navigation Bar */
 /*@media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
@@ -142,7 +145,6 @@ body {font-family: Arial; background-color: #DCE1DE;}
 .grid-5-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  align-content: center;
   gap: 10px;
   margin: 10px;
 }
