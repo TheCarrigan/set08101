@@ -136,7 +136,6 @@ body {font-family: Arial; background-color: #DCE1DE;}
 .grid-5-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
   margin: 10px;
 }
 /* End of Recipes */
