@@ -138,6 +138,6 @@ body {font-family: Arial; background-color: #DCE1DE;}
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   margin: 10px;
-  align-items: center;
+  align-content: center;
 }
 /* End of Recipes */
