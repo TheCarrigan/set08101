@@ -1,5 +1,11 @@
 body {font-family: Arial; background-color: #DCE1DE;}
 
+/* General Styles */
+.centred {
+  margin: 0 auto;
+  width: 50%;
+}
+
 /* Navigation Bar */
 .navbar {
   overflow: hidden;
@@ -138,6 +144,6 @@ body {font-family: Arial; background-color: #DCE1DE;}
   grid-template-columns: repeat(5, 1fr);
   align-content: center;
   gap: 10px;
-  margin: auto;
+  margin: 10px;
 }
 /* End of Recipes */
