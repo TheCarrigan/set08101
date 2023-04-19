@@ -8,10 +8,10 @@ body {font-family: Arial; background-color: #DCE1DE;}
 }
 
 .centred-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  width: 50%;
 }
 
 /* End of General Styles */
