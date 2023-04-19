@@ -151,7 +151,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 .flex-container-row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   gap: 10px;
 }
