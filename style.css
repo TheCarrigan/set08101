@@ -7,8 +7,13 @@ body {font-family: Arial; background-color: #DCE1DE;}
   align-content: center;
 }
 
-/*.cetered-container {
+.centred-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 /* End of General Styles */
 
 /* Navigation Bar */
@@ -134,7 +139,8 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 /*Footer*/
 .footer {
-  position: fixed;
+  position: static;
+  border-radius: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
