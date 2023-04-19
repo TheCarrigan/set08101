@@ -153,7 +153,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: center;
   text-align: center;
+  align-content: center;
 }
 /* End of Recipes */
