@@ -131,7 +131,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 /*Footer*/
 .footer {
-  position: static;
+  position: fixed;
   border-radius: 10px;
   left: 0;
   bottom: 0;
