@@ -6,14 +6,6 @@ body {font-family: Arial; background-color: #DCE1DE;}
   text-align: center;
   align-content: center;
 }
-
-.centred-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 /* End of General Styles */
 
 /* Navigation Bar */
@@ -164,5 +156,6 @@ body {font-family: Arial; background-color: #DCE1DE;}
   justify-content: space-evenly;
   text-align: center;
   align-content: center;
+  height: 100vh;
 }
 /* End of Recipes */
