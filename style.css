@@ -99,7 +99,8 @@ body {font-family: Arial; background-color: #DCE1DE;}
   padding: 5px;
   margin: 8.2px;
   border: 1px solid #1F2421;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   outline: none;
   font-size: 17px;
 }
