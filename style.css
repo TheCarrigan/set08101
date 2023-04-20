@@ -87,6 +87,15 @@ body {font-family: Arial; background-color: #DCE1DE;}
   display: block;
 }
 
+.search-box {
+  float: right;
+  margin-top: 10px;
+  margin-right: 16px;
+  border-radius: 5px;
+  background-color: #DCE1DE;
+  padding: 3px;
+}
+
 /* Responsive Navigation Bar */
 /*@media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
@@ -131,7 +140,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 /*Footer*/
 .footer {
-  position: sticky;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -144,7 +153,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 /* Recipes */
 .grid-container-5-columns {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
   gap: 10px;
   margin: 10px;
 }
