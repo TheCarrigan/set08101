@@ -94,6 +94,8 @@ body {font-family: Arial; background-color: #DCE1DE;}
   border-radius: 5px;
   background-color: #ffffff;
   padding: 3px;
+  font-size: 17px;
+  width: 10.5vw;
 }
 
 /* Responsive Navigation Bar */
