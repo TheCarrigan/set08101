@@ -131,7 +131,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 
 /*Footer*/
 .footer {
-  position: fixed;
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -142,7 +142,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 /* End of Footer */
 
 /* Recipes */
-.grid-5-columns {
+.grid-container-5-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
