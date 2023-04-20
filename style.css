@@ -91,12 +91,13 @@ body {font-family: Arial; background-color: #DCE1DE;}
   display: flex;
   float: right;
   width: auto;
+  align-content: center;
 }
 
 .search-box input {
   width: 15vw;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
   border: 1px solid #1F2421;
   color: #ffffff;
   outline: none;
