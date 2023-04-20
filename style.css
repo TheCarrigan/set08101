@@ -88,7 +88,9 @@ body {font-family: Arial; background-color: #DCE1DE;}
 }
 
 .search-box {
-  float: right;
+  display: flex;
+  flex-direction: row;
+  float: left;
   margin-top: 10px;
   margin-right: 16px;
   border-radius: 5px;
