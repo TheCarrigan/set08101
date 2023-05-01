@@ -184,6 +184,7 @@ body {font-family: Arial; background-color: #DCE1DE;}
 .grid-container-5-columns {
   display: grid;
   flex-wrap: wrap;
+  grid-template-columns: auto auto auto auto auto;
   gap: 10px;
   margin: 10px;
 }
