@@ -7,6 +7,14 @@ html {scroll-behavior: smooth;}
   text-align: center;
   align-content: center;
 }
+
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+}
 /* End of General Styles */
 
 /* Logo */
@@ -182,14 +190,6 @@ html {scroll-behavior: smooth;}
 /* End of Footer */
 
 /* Recipes */
-.grid-container-5-columns {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 10px;
-  margin: 10px;
-}
-
 .flex-container-row {
   display: flex;
   flex-wrap: wrap;
