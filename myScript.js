@@ -7,7 +7,7 @@
     }
   }*/
 
-//Spoontacular API
+//Spoontacular API Recipe Search
 const apiKey = '0db351a970e1413b9ffb8d3e823aea03';
 const searchButton = document.getElementById('search-button');
 const resultsContainer = document.getElementById('recipe-list');
@@ -51,7 +51,7 @@ function handleResults(data) {
     resultsContainer.appendChild(recipe);
   });
 }
-// End of Spoonacular API
+// End of Spoonacular API Recipe Search
 
 // Tabs
 const tabs = document.querySelectorAll(".tab");
