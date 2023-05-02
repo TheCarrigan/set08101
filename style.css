@@ -159,6 +159,16 @@ form {margin: 0 auto;}
   color: #ffffff;
   text-align: center;
 }
+
+.footer a {
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer a:hover {
+  color: #9CC5A1;
+}
 /* End of Footer */
 
 /* Recipes */
