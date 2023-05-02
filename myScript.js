@@ -1,11 +1,7 @@
-/*function myFunction() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-  }*/
+// Author: Aaron Carrigan
+// Date: 03/05/2023
+// JavaScript for a recipe website that uses the Spoonacular API to search for recipes.
+// The website is located at https://www.thecarrigan.com
 
 //Spoontacular API Recipe Search
 const apiKey = '0db351a970e1413b9ffb8d3e823aea03';
