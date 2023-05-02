@@ -17,15 +17,6 @@ form {margin: 0 auto;}
   gap: 15px;
   overflow: hidden;
 }
-
-.main-content {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 15px;
-  overflow: hidden;
-  margin-top: 20px;
-}
 /* End of General Styles */
 
 /* Logo */
@@ -149,6 +140,15 @@ form {margin: 0 auto;}
 /* End of Navigation Bar */
 
 /* Homepage */
+.main-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
 .articles {
   display: flex;
   justify-content: space-evenly;
