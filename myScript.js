@@ -52,3 +52,33 @@ function handleResults(data) {
   });
 }
 // End of Spoonacular API
+
+// Tabs
+const tabs = document.querySelectorAll(".tab");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const tabId = tab.getAttribute("data-tab");
+    setActiveTab(tabId);
+  });
+});
+
+function setActiveTab(tabId) {
+  tabs.forEach(tab => {
+    if (tab.getAttribute("data-tab") === tabId) {
+      tab.classList.add("active");
+    } else {
+      tab.classList.remove("active");
+    }
+  });
+
+  tabContents.forEach(content => {
+    if (content.getAttribute("data-tab") === tabId) {
+      content.classList.add("active");
+    } else {
+      content.classList.remove("active");
+    }
+  });
+}
+// End of Tabs
