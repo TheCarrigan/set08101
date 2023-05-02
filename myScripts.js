@@ -16,7 +16,7 @@ const spoonacular = new Spoonacular(apiKey);
 // When the search button is clicked, make a request to the Spoonacular API for the list of recipes that match the search term.
 document.getElementById("search").onclick = function() {
   // Get the search term from the input box.
-  const searchTerm = document.getElementById("search").value;
+  const searchTerm = document.getElementById({search}).value;
 
   // Make a request to the Spoonacular API for the list of recipes that match the search term.
   spoonacular.searchRecipes(searchTerm, (err, recipes) => {
