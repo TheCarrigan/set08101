@@ -17,6 +17,14 @@ form {margin: 0 auto;}
   gap: 15px;
   overflow: hidden;
 }
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+}
 /* End of General Styles */
 
 /* Logo */
