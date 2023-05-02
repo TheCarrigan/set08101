@@ -178,6 +178,26 @@ form {margin: 0 auto;}
   height: 100%;
   object-fit: cover;
 }
+
+.article:hover img {
+  filter: blur(3px);
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.article:hover .caption {
+  opacity: 1;
+}
 /* End of Homepage */
 
 /*Footer*/
