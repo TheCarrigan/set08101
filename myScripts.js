@@ -11,7 +11,7 @@
 const apiKey = "0db351a970e1413b9ffb8d3e823aea03";
 
 // Create a new Spoonacular object.
-const spoonacular = new Spoonacular(apiKey);
+const spoonacular = new spoonacular(apiKey);
 
 // When the search button is clicked, make a request to the Spoonacular API for the list of recipes that match the search term.
 document.getElementById(["search"]).onclick = function() {
