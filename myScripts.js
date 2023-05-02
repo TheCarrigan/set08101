@@ -41,13 +41,14 @@ document.getElementById(["search"]).onclick = function() {
 
 const apiKey = '0db351a970e1413b9ffb8d3e823aea03';
 const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
 const resultsContainer = document.getElementById('recipes');
 
-searchButton.addEventListener('submit', (event) => {
+searchButton.addEventListener('click', (event) => {
   event.preventDefault();
 
   // Get the search query from the input field
-  const searchQuery = searchButton.value;
+  const searchQuery = searchInput.value;
 
   // Make an API request to the Spoonacular API's recipe search endpoint
   fetch(`https://api.spoonacular.com/recipes/search?apiKey=${apiKey}&query=${searchQuery}`)
@@ -67,12 +68,8 @@ searchButton.addEventListener('submit', (event) => {
         const image = document.createElement('img');
         image.src = `https://spoonacular.com/recipeImages/${result.image}`;
 
-        const summary = document.createElement('p');
-        summary.textContent = result.summary;
-
         recipe.appendChild(title);
         recipe.appendChild(image);
-        recipe.appendChild(summary);
 
         resultsContainer.appendChild(recipe);
       });
