@@ -151,31 +151,33 @@ form {margin: 0 auto;}
 /* Homepage */
 .articles {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
+  background-color: #1F2421;
+  padding-top: 9px;
+  flex-wrap: wrap;
 }
 
 .article {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-basis: calc((100% - 30px) / 4);
+  height: 150px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
-.article:first-child {
-  flex-basis: 40%;
-}
-
-.article:not(:first-child) {
-  flex-basis: 20%;
+.article:last-child {
+  margin-right: 0;
 }
 
 .article img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 /* End of Homepage */
 
 /*Footer*/
