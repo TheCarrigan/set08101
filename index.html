@@ -7,10 +7,6 @@
 
   <body>
 
-    <script src="/myScript.js"></script>
-    <!-- gets icons from https://fontawesome.com/ -->
-    <script src="https://kit.fontawesome.com/585abf5151.js" crossorigin="anonymous"></script>
-
     <div class="logo">
       <a href="/index.html">
         <img src="/images/TheCarrigansLogoV2TransparentCropped.png" height="40px"></a>
@@ -30,10 +26,10 @@
       </nav> 
       <a href="/other/other.html">Other</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      <div class="search-box">
+      <form class="search-box">
         <input type="text" id="search-input" placeholder="Search...">
         <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
-      </div>
+      </form>
     </header>
     <!-- End of Navigation Bar -->
 
@@ -49,7 +45,7 @@
 
     <section>
       <h2>Recipes searched for:</h2>
-      <ul id="recipes">
+      <ul id="recipe-list">
       </ul>
       <p>This is a test article and search.</p>
     </section>
@@ -60,5 +56,9 @@
       </div>
     </footer>
 
+    <script src="myScript.js"></script>
+    <!-- gets icons from https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/585abf5151.js" crossorigin="anonymous"></script>
+  
   </body>
 </html>
