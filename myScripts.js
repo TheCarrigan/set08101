@@ -7,7 +7,7 @@
     }
   }*/
 
-// Get the Spoonacular API key.
+/*// Get the Spoonacular API key.
 const apiKey = "0db351a970e1413b9ffb8d3e823aea03";
 
 // Create a new Spoonacular object.
@@ -37,4 +37,44 @@ document.getElementById(["search"]).onclick = function() {
       document.getElementById("recipes").appendChild(li);
     });
   });
-};
+};*/
+
+const apiKey = '0db351a970e1413b9ffb8d3e823aea03';
+const form = document.getElementById('search-form');
+const resultsContainer = document.getElementById('results-container');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  // Get the search query from the form input field
+  const searchQuery = document.getElementById('search').value;
+
+  // Make an API request to the Spoonacular API's recipe search endpoint
+  fetch(`https://api.spoonacular.com/recipes/search?apiKey=${apiKey}&query=${searchQuery}`)
+    .then(response => response.json())
+    .then(data => {
+      // Clear any existing results from the results container
+      resultsContainer.innerHTML = '';
+
+      // Process the search results and display them on the webpage
+      data.results.forEach(result => {
+        const recipe = document.createElement('div');
+        recipe.classList.add('recipe');
+
+        const title = document.createElement('h3');
+        title.textContent = result.title;
+
+        const image = document.createElement('img');
+        image.src = result.image;
+
+        const summary = document.createElement('p');
+        summary.textContent = result.summary;
+
+        recipe.appendChild(title);
+        recipe.appendChild(image);
+        recipe.appendChild(summary);
+
+        resultsContainer.appendChild(recipe);
+      });
+    });
+});
