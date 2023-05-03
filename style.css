@@ -245,13 +245,30 @@ a {text-decoration: none;}
 .spotify {
   width: 45%;
 }
-/* ENUSEC Easter Egg */
+/* Search Results and ENUSEC Easter Egg */
+.search-results {
+  text-align: center;
+}
+
 .search-results span {
   color: #ff0000;
 }
 
 .search-results a {
   color: #000000;
+}
+
+.container-search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.container-search-results .recipe {
+  flex-basis: calc(20% - 20px);
+  margin: 45px 0px;
+  box-sizing: border-box;
 }
 /* End of Homepage */
 
