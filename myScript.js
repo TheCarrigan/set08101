@@ -34,16 +34,20 @@ function handleResults(data) {
   data.results.forEach(result => {
     const recipe = document.createElement('article');
     recipe.classList.add('recipe');
-
+  
     const title = document.createElement('h3');
     title.textContent = result.title;
-
+  
+    const anchor = document.createElement('a');
+    anchor.href = `${result.sourceUrl}`;
+  
     const image = document.createElement('img');
     image.src = `https://spoonacular.com/recipeImages/${result.image}`;
-
-    recipe.appendChild(title);
-    recipe.appendChild(image);
-
+  
+    anchor.appendChild(image); // Add the image as a child of the anchor element
+    recipe.appendChild(title); // Add the title as a child of the recipe element
+    recipe.appendChild(anchor); // Add the anchor with the image inside it to the recipe element
+  
     resultsContainer.appendChild(recipe);
   });
 }
