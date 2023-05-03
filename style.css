@@ -208,7 +208,7 @@ a {text-decoration: none;}
   font-weight: 600;
 }
 
-.secondary-content:hover a {
+.secondary-content a:hover {
   color: #9CC5A1;
 }
 /* Additional Content */
