@@ -1,34 +1,35 @@
 <html lang="en">
-  <title>TheCarrigan</title>
   <head>
+    <title>TheCarrigan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
-
   <body>
     <!-- Logo -->
     <div class="logo">
       <a href="/index.html">
         <img src="/images/TheCarrigansLogoV2TransparentCropped.png" height="40px"></a>
     </div>
+    <!-- End of Logo -->
+
     <!-- Navigation Bar -->
-    <header class="navbar" id="myNavbar">
+    <nav class="navbar" id="myNavbar">
       <a href="/index.html" class="active">Home</a>
       <a href="/recipes.html">Recipes</a>
-      <nav href="/categories/categories.html" class="dropdown">
+      <div href="/categories.html" class="dropdown">
         <button onclick="window.location.href='/categories/categories.html';" class="dropbtn">Categories</button>
-        <nav class="dropdown-content">
+        <div class="dropdown-content">
           <a href="/categories/quick.html">Quick</a>
           <a href="/categories/everyday.html">Everyday</a>
           <a href="/categories/healthy.html">Healthy</a>
-        </nav>
-      </nav> 
-      <a href="/other/other.html">Other</a>
+        </div>
+      </div> 
+      <a href="/other.html">Other</a>
       <form class="search-box">
         <input type="text" id="search-input" placeholder="Search...">
         <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
       </form>
-    </header>
+    </nav>
     <!-- End of Navigation Bar -->
 
     <div class="centred">
@@ -122,16 +123,17 @@
       </section>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
       <p>© 2023 TheCarrigan</p>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
       <a href="/help.html">Help</a>
     </footer>
-    
+    <!-- End of Footer -->
+
     <script src="/myScript.js"></script>
     <!-- gets icons from https://fontawesome.com/ -->
     <script src="https://kit.fontawesome.com/585abf5151.js" crossorigin="anonymous"></script>
-
   </body>
 </html>
