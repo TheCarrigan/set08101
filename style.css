@@ -141,6 +141,7 @@ a {text-decoration: none;}
 /* End of Navigation Bar */
 
 /* Homepage */
+/* Main Content */
 .main-content {
   display: flex;
   width: 100%;
@@ -199,6 +200,16 @@ a {text-decoration: none;}
 
 .article:hover .caption {
   opacity: 1;
+}
+/* Secondary Content */
+.secondary-content a {
+  color: #49A078;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.secondary-content:hover a {
+  color: #9CC5A1;
 }
 /* End of Homepage */
 
