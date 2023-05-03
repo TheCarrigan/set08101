@@ -23,6 +23,7 @@ searchButton.addEventListener('click', (event) => {
     .catch(error => console.log(error));
 });
 
+// Takes out the recipe title, image, and source URL from the data and displays it on the page
 function handleResults(data) {
   resultsContainer.innerHTML = '';
 
@@ -62,10 +63,10 @@ randomButton.addEventListener('click', (event) => {
     .catch(error => console.log(error));
 
   function randomHandle(data) {
-    // Get the recipe ID and source URL from the fetched data
+    // Get the source URL from the fetched data
     const sourceUrl = data.recipes[0].sourceUrl;
 
-    // Redirect the user to the source URL of the random recipe
+    // Redirect to the source URL of the random recipe
     window.location.href = sourceUrl;
   }
 });
