@@ -289,6 +289,14 @@ a {text-decoration: none;}
   align-content: center;
   height: 85vh;
 }
+
+.flex-container-row button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #DCE1DE;
+  font-size: 16px;
+}
 /* Tabbed Container */
 .tabs-container {
   width: 600px;
