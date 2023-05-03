@@ -317,7 +317,7 @@ a {text-decoration: none;}
 /* Tabbed Container */
 .tabs-container {
   width: 600px;
-  height: 300px;
+  height: 550px;
   border: 1px solid #cccccc;
   background-color: #DCE1DE;
   position: relative;
@@ -342,6 +342,18 @@ a {text-decoration: none;}
   cursor: pointer;
   font-size: 16px;
   color: #ffffff;
+}
+
+.tab:hover {
+  background-color: #DCE1DE;
+  border-bottom: 2px solid #1F2421;
+  color: #000000;
+}
+
+.tab.active:hover {
+  background-color: #DCE1DE;
+  border-bottom: 2px solid #1F2421;
+  color: #000000;
 }
 
 .tab:focus {
