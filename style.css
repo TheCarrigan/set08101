@@ -177,6 +177,8 @@ a {text-decoration: none;}
 
 .articles button {
   border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .article {
@@ -201,7 +203,7 @@ a {text-decoration: none;}
 }
 
 .article:hover img {
-  filter: blur(5px);
+  filter: blur(7px);
 }
 
 .caption {
