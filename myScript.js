@@ -32,7 +32,7 @@ function handleResults(data) {
 
   // Process the search results and display them on the webpage
   data.results.forEach(result => {
-    const recipe = document.createElement('li');
+    const recipe = document.createElement('article');
     recipe.classList.add('recipe');
 
     const title = document.createElement('h3');
@@ -53,6 +53,7 @@ function handleResults(data) {
 const tabs = document.querySelectorAll(".tab");
 const tabContents = document.querySelectorAll(".tab-content");
 
+// Add click event listener to each tab
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
     const tabId = tab.getAttribute("data-tab");
@@ -60,6 +61,7 @@ tabs.forEach(tab => {
   });
 });
 
+// Set the active tab to tabId activated by the event listener
 function setActiveTab(tabId) {
   tabs.forEach(tab => {
     if (tab.getAttribute("data-tab") === tabId) {
