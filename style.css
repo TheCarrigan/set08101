@@ -239,6 +239,14 @@ a {text-decoration: none;}
 .spotify {
   width: 45%;
 }
+/* ENUSEC Easter Egg */
+.search-results span {
+  color: #ff0000;
+}
+
+.search-results a {
+  color: #000000;
+}
 /* End of Homepage */
 
 /*Footer*/
