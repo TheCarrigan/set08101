@@ -211,6 +211,20 @@ a {text-decoration: none;}
 .secondary-content:hover a {
   color: #9CC5A1;
 }
+/* Additional Content */
+.spotify-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1F2421;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.spotify {
+  width: 45%;
+}
 /* End of Homepage */
 
 /*Footer*/
