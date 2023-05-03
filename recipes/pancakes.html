@@ -10,6 +10,8 @@
       <a href="/index.html">
         <img src="/images/TheCarrigansLogoV2TransparentCropped.png" height="40px"></a>
     </div>
+    <!-- End of Logo -->
+
     <!-- Navigation Bar -->
     <header class="navbar" id="myNavbar">
       <a href="/index.html" class="active">Home</a>
@@ -30,9 +32,15 @@
     </header>
     <!-- End of Navigation Bar -->
 
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+      <a href="/index.html">Home</a> &gt; <a href="/recipes.html">Recipes</a> &gt; <a href="/recipes/all_recipes.html">All Recipes</a> &gt; <a href="/recipes/pancakes.html">Pancakes</a>
+    </nav>
+    <!-- End of Breadcrumbs -->
+
     <!-- Tabbed Container -->
     <div class="centred">
-      <div class="container">
+      <div class="tabs-container">
         <section class="tabs">
           <button class="tab active" data-tab="tab1">Information</button>
           <button class="tab" data-tab="tab2">Ingredients</button>
@@ -40,13 +48,13 @@
         </section>
         <section class="content">
           <article class="tab-content active" data-tab="tab1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod blandit elit, in ullamcorper elit laoreet quis. Mauris dictum, mi a facilisis malesuada, lacus nunc consequat mi, in semper ex ipsum eu nunc.</p>
+            <p>Recipe Information</p>
           </article>
           <article class="tab-content" data-tab="tab2">
-            <p>Nullam varius orci id risus luctus, nec dictum quam dapibus. Praesent vel purus eget nulla pulvinar eleifend. Maecenas ullamcorper lacus a sapien feugiat malesuada.</p>
+            <p>Ingredient Infomation</p>
           </article>
           <article class="tab-content" data-tab="tab3">
-            <p>Suspendisse fermentum ac risus vel malesuada. Pellentesque eu tristique dolor. Nam malesuada justo vel mi gravida, eget faucibus nibh lobortis.</p>
+            <p>Cooking Method</p>
           </article>
         </section>
       </div>
@@ -55,6 +63,5 @@
     <script src="/myScript.js"></script>
     <!-- gets icons from https://fontawesome.com/ -->
     <script src="https://kit.fontawesome.com/585abf5151.js" crossorigin="anonymous"></script>
-  
   </body>
 </html>

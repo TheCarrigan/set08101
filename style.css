@@ -18,6 +18,20 @@ a {text-decoration: none;}
   gap: 15px;
   overflow: hidden;
 }
+
+.breadcrumbs {
+  width:fit-content;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #1F2421;
+  color: #ffffff;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+}
 /* End of General Styles */
 
 /* Logo */
@@ -261,14 +275,14 @@ a {text-decoration: none;}
   align-content: center;
   height: 85vh;
 }
-
-.container {
+/* Tabbed Container */
+.tabs-container {
   width: 600px;
   height: 300px;
   border: 1px solid #cccccc;
   background-color: #DCE1DE;
   position: relative;
-  
+  margin-top: 20px;
 }
 
 .tabs {
@@ -322,7 +336,7 @@ a {text-decoration: none;}
   font-size: 16px;
   line-height: 1.5;
 }
-
+/* Recipe Cards */
 .recipe {
   flex-basis: 1;
   height: 150px;
