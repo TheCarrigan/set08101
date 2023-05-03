@@ -12,46 +12,64 @@ searchButton.addEventListener('click', (event) => {
   event.preventDefault();
 
   const searchInput = document.getElementById('search-input');
-
-  // Get the search query from the input field
   const searchQuery = searchInput.value;
 
-  // Make an API request to the Spoonacular API's recipe search endpoint
   fetch(`https://api.spoonacular.com/recipes/search?apiKey=${apiKey}&query=${searchQuery}`)
-  .then(response => response.json())
-  .then(data => {obj = data;})
-  .then(data => console.log(obj))
-  .then(data => handleResults(obj))
-  .catch(error => console.log(error));
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      handleResults(data);
+    })
+    .catch(error => console.log(error));
 });
 
 function handleResults(data) {
-
-  // Clear any existing results from the results container
   resultsContainer.innerHTML = '';
 
-  // Process the search results and display them on the webpage
   data.results.forEach(result => {
     const recipe = document.createElement('article');
     recipe.classList.add('recipe');
-  
+
     const title = document.createElement('h3');
     title.textContent = result.title;
-  
+
     const anchor = document.createElement('a');
     anchor.href = `${result.sourceUrl}`;
-  
+
     const image = document.createElement('img');
     image.src = `https://spoonacular.com/recipeImages/${result.image}`;
-  
-    anchor.appendChild(image); // Add the image as a child of the anchor element
-    recipe.appendChild(title); // Add the title as a child of the recipe element
-    recipe.appendChild(anchor); // Add the anchor with the image inside it to the recipe element
-  
+
+    anchor.appendChild(image);
+    recipe.appendChild(title);
+    recipe.appendChild(anchor);
+
     resultsContainer.appendChild(recipe);
   });
 }
 // End of Spoonacular API Recipe Search
+
+// Spoonacular API Random Recipe Redirect
+const randomButton = document.getElementById('random'); // Corrected method name
+
+randomButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  fetch(`https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      randomHandle(data);
+    })
+    .catch(error => console.log(error));
+
+  function randomHandle(data) {
+    // Get the recipe ID and source URL from the fetched data
+    const sourceUrl = data.recipes[0].sourceUrl;
+
+    // Redirect the user to the source URL of the random recipe
+    window.location.href = sourceUrl;
+  }
+});
+// End of Spoonacular API Random Recipe Redirect
 
 // Tabs
 const tabs = document.querySelectorAll(".tab");
