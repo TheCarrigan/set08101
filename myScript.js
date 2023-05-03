@@ -3,6 +3,39 @@
 // JavaScript for a recipe website that uses the Spoonacular API to search for recipes.
 // The website is located at https://www.thecarrigan.com
 
+// Tabs container for our recipe page
+// This must run first or will not work
+const tabs = document.querySelectorAll(".tab");
+const tabContents = document.querySelectorAll(".tab-content");
+
+// Add click event listener to each tab
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const tabId = tab.getAttribute("data-tab");
+    setActiveTab(tabId);
+  });
+});
+
+// Set the active tab to tabId activated by the event listener
+function setActiveTab(tabId) {
+  tabs.forEach(tab => {
+    if (tab.getAttribute("data-tab") === tabId) {
+      tab.classList.add("active");
+    } else {
+      tab.classList.remove("active");
+    }
+  });
+
+  tabContents.forEach(content => {
+    if (content.getAttribute("data-tab") === tabId) {
+      content.classList.add("active");
+    } else {
+      content.classList.remove("active");
+    }
+  });
+}
+// End of Tabs
+
 //Spoontacular API Recipe Search
 const apiKey = '0db351a970e1413b9ffb8d3e823aea03';
 const searchButton = document.getElementById('search-button');
@@ -71,35 +104,3 @@ randomButton.addEventListener('click', (event) => {
   }
 });
 // End of Spoonacular API Random Recipe Redirect
-
-// Tabs
-const tabs = document.querySelectorAll(".tab");
-const tabContents = document.querySelectorAll(".tab-content");
-
-// Add click event listener to each tab
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    const tabId = tab.getAttribute("data-tab");
-    setActiveTab(tabId);
-  });
-});
-
-// Set the active tab to tabId activated by the event listener
-function setActiveTab(tabId) {
-  tabs.forEach(tab => {
-    if (tab.getAttribute("data-tab") === tabId) {
-      tab.classList.add("active");
-    } else {
-      tab.classList.remove("active");
-    }
-  });
-
-  tabContents.forEach(content => {
-    if (content.getAttribute("data-tab") === tabId) {
-      content.classList.add("active");
-    } else {
-      content.classList.remove("active");
-    }
-  });
-}
-// End of Tabs
