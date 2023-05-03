@@ -13,7 +13,7 @@ a {text-decoration: none;}
 .container-wrap {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
+  max-width: auto;
   justify-content: center;
   gap: 15px;
   overflow: hidden;
@@ -296,5 +296,19 @@ a {text-decoration: none;}
 .container p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.recipe {
+  flex-basis: 1;
+  height: 150px;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.recipe img {
+  width: 250px;
+  height: 166.22px;
+  object-fit: cover;
 }
 /* End of Recipes */
