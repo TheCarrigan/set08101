@@ -175,6 +175,10 @@ a {text-decoration: none;}
   flex-wrap: wrap;
 }
 
+.articles button {
+  border: none;
+}
+
 .article {
   flex-basis: calc((100% - 30px) / 4);
   height: 150px;
